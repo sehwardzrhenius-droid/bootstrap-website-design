@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        #d1{
+            height:10vh;
+            width:100vw;
+            background-color:  blueviolet;
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+            position: sticky;
+            top:0;
+            
+        }
+        #left{
+            width:15%;
+            display:flex;
+            justify-content: space-around;
+            color: white;
+    
+            }
+        #center{
+            display:flex;
+            
+            
+        }
+        #right{
+            color: white;
+            width:15%;
+            display:flex;
+            justify-content: space-around;
+            
+
+        }
+        #left:hover,#right:hover{
+            cursor: pointer;
+        }
+        #center input{
+            width: 400px;
+            height: 30px;
+            border-radius: 5px;
+            border:none;
+            padding-left: 10px;
+        }
+        #center:hover{
+            box-shadow: 0px 0px 5px 2px rgba(255, 99, 71, 0.855);
+
+        }
+        #d2{ 
+            width:100vw;
+            height:100vh;
+            display:flex;
+            
+        }
+
+        #m1{
+            width:25vw;
+            overflow:auto;
+            padding: 20px;
+            line-height: 2;
+        }
+        #m1:hover{
+            cursor: pointer;
+
+        }
+        #m2{
+            overflow:auto;
+            width:70vw;
+            
+        }
+
+        #m3{
+            align-items: center;
+            width:25vw;
+            padding:20px;
+            line-height: 2;
+        
+        }
+        #m3:hover{
+            cursor: pointer;
+        }
+        li{
+            list-style: none;
+            padding-left:20px;
+        }
+        #f1{
+            font-size: 30px;
+            font-style: oblique;
+            }
+        #d3{
+            width:100vw;
+            height:50vh;
+            background-color: rgba(128, 128, 128, 0.188);
+            position:sticky;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        #sp,#sp1,#sp2,#sp3{
+            line-height: 2;
+        }
+         
+    </style>
+
+    <div id="d1">
+        <div id="left">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+  <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+  <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3z"/>
+</svg>
+            <p>Docs</p>
+            <p>Examples</p>
+            <p>Icons</p>
+            <p>Blog</p>
+        </div>
+
+
+        <div id="center">
+            <input type="text" placeholder="🔍search">
+        </div>
+
+
+        <div id="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-opencollective" viewBox="0 0 16 16">
+  <path fill-opacity=".4" d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z"/>
+  <path d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z"/>
+</svg>
+<div>
+    |v5.3<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg>|
+
+</div>
+<div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+  <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg>
+</div>
+</div>
+</div>
+
+
+    <div id="d2">
+
+    <div id="m1">
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+</svg> Getting started</h3>
+<p>Introduction</p>
+<p>Downloads</p>
+<p>Contents</p>
+<p>Browsers&devices</p>
+<p>JavaScript</p>
+<p>WebPack</p>
+<p>Parcel</p>
+<p>Vite</p>
+<p>Accesibility</p>
+<p>RFS</p>
+<p>RTL</p>
+<p>Contribute</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+</svg> Customize</h3>
+<p>Overview</p>
+<p>Saas</p>
+<p>Options</p>
+<p>Color</p>
+<p>Color mode</p>
+<p>Components</p>
+<p>CSS variables</p>
+<p>Optimize</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"/>
+</svg> Layouts</h3>
+<p>Breakpoints</p>
+<p>Containers</p>
+<p>Grid</p>
+<p>Columns</p>
+<p>Gutters</p>
+<p>Utilities</p>
+<P>Z-Index</P>
+<P>CSS Grid</P>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
+  <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
+  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+</svg> Content</h3>
+<p>Reboot</p>
+<p>Typography</p>
+<p>Images</p>
+<p>Tables</p>
+<p>Figures</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-radios" viewBox="0 0 16 16">
+  <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0m7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6m0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+</svg> Forms</h3>
+<p>Overview</p>
+<p>Form controls</p>
+<p>Select</p>
+<p>Checks&radios</p>
+<p>Range</p>
+<p>Input group</p>
+<p>Floating labels</p>
+<p>Layout</p>
+<p>Validation</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+  <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+</svg> Components</h3>
+<p>Accordion</p>
+<p>Alerts</p>
+<p>Badge</p>
+<p>Breadcrumb</p>
+<p>Buttons</p>
+<p>Button group</p>
+<p>Card</p>
+<p>Carousel</p>
+<p>Close button</p>
+<p>Collapse</p>
+<p>Dropdowns</p>
+<p>List group</p>
+<p>Modal</p>
+<p>Navbar</p>
+<p>Navs&tabs</p>
+<p>Offcanvas</p>
+<p>Pagination</p>
+<p>Placeholders</p>
+<p>Popovers</p>
+<p>Progress</p>
+<p>Scrollspy</p>
+<p>Spinners</p>
+<p>Toasts</p>
+<p>Tooltips</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-magic" viewBox="0 0 16 16">
+  <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z"/>
+</svg> Helpers</h3>
+<p>Clearfix</p>
+<p>color&background</p>
+<p>colored links</p>
+<p>Focus ring</p>
+<p>Position</p>
+<p>Ratio</p>
+<p>Stacks</p>
+<p>Stretched link</p>
+<p>Text truncation</p>
+<p>Vertical rule</p>
+<p>Visually hidden</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-braces-asterisk" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6M7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5z"/>
+</svg> Utilites</h3>
+<p>API</p>
+<p>Background</p>
+<p>Border</p>
+<p>Color</p>
+<p>Display</p>
+<p>Flex</p>
+<p>Float</p>
+<p>Interation</p>
+<p>Link</p>
+<p>Object fit</p>
+<p>Opacity</p>
+<p>Overflow</p>
+<p>Position</p>
+<p>Shadow</p>
+<p>Sizing</p>
+<p>Spacing</p>
+<p>Text</p>
+<p>Vertical align</p>
+<p>Visibility</p>
+<p>Z-index</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+  <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+</svg> Extend</h3>
+<p>Approach</p>
+<p>Icon</p>
+
+<h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+</svg> About</h3>
+<p>Overview</p>
+<p>Team</p>
+<p>Brand</p>
+<p>Licence</p>
+<p>Translations</p>
+<hr>
+<p>Migration</p>
+</div>
+
+
+    <div id="m2">
+        <h1>Get started with Bootstrap</h1>
+        <p id="f1">Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
+        <br>
+        <br>
+        <h1>Quick start</h1>
+        <p>Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. See it in practice with this <a target="_blank" href="https://codepen.io/team/bootstrap/pen/qBamdLj">Bootstrap Codepen Demo</a></p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero possimus odit ipsam amet ullam odio quia dignissimos soluta ab, fuga beatae laborum, dolorum sed aut, voluptates ipsa debitis saepe quas et veritatis sapiente eveniet est. Delectus doloremque, reprehenderit voluptas, commodi, nobis libero corrupti quibusdam obcaecati dolor saepe beatae aperiam qui pariatur nam earum harum iusto! Quisquam nesciunt consequuntur quibusdam laborum tenetur alias placeat fugit, qui et beatae. Ex incidunt excepturi obcaecati vitae autem inventore blanditiis delectus itaque illum, nihil porro harum eius voluptates nulla, accusantium facilis deserunt eum, est possimus. Voluptate eum suscipit blanditiis molestias corrupti vitae, a accusantium ducimus molestiae esse architecto non veritatis, asperiores, odio repudiandae. Rerum atque a ab, fugiat cumque labore unde dolorem sed eum quibusdam aliquam debitis quia ipsa error nostrum quisquam repudiandae esse maiores quaerat commodi tenetur! Voluptatum eum ipsum quibusdam hic? Magnam accusamus nostrum nobis porro voluptatem ab quod facilis, aut suscipit dolor, quibusdam fugit quas. Magnam quia voluptatum, quas ab eos alias labore vel rem ea perferendis sapiente eveniet itaque harum repellat unde dolore est, ullam quae et libero cum! Perferendis quis doloribus, asperiores eos tempora laudantium recusandae illum dolore, quae unde facere similique placeat molestiae eum doloremque nam amet voluptates nemo numquam, minima deleniti? Alias commodi quod quam tenetur molestiae eligendi fuga, explicabo quis. Eveniet ullam impedit ea natus at! Dolor officia a quidem explicabo odit dolorum eius maxime blanditiis vitae iure! Eius hic quasi nostrum. Porro asperiores possimus quia minima? Cupiditate impedit sapiente ullam, porro qui voluptates. Aspernatur error explicabo sequi nostrum sapiente natus est id officiis placeat minus quas assumenda illum eos deleniti possimus, ipsum enim voluptas magnam, accusantium exercitationem, itaque rerum! Hic, molestias. Sunt nisi, at rem odio amet nam vero illum modi fuga tempora non facere in. Exercitationem ab voluptate, fugit, distinctio maxime repudiandae nisi nam tempora dolorem minima labore quisquam ducimus eius libero, nostrum ea explicabo eum ut tempore esse eveniet nihil praesentium. Perspiciatis amet minima obcaecati eligendi sapiente laborum voluptas blanditiis, quasi ab corporis quidem accusamus alias reiciendis rerum saepe pariatur? Eveniet illo recusandae suscipit amet! Deserunt architecto sunt neque id praesentium alias, minima voluptatum! Saepe at sit odio vitae recusandae quisquam enim ducimus cupiditate molestias? Nesciunt atque modi, quos quo voluptatibus nemo corrupti rem fugit provident voluptates voluptatum est aliquid tempore optio mollitia reprehenderit, corporis in? Asperiores aperiam rem qui consequatur corporis? Ratione hic cum, tempora incidunt doloremque nesciunt repellendus. Aliquam iste quisquam cumque veritatis debitis mollitia fugit tempora voluptatem distinctio quod quos eveniet delectus cum exercitationem, placeat officiis repellat adipisci facere tempore dolorum quia ex facilis assumenda! Animi, incidunt numquam voluptas facilis similique quas accusamus laudantium est iure accusantium nulla doloremque nisi amet dolor tempore maiores corrupti aperiam sapiente culpa quis et inventore quia? Officia, incidunt ullam eos iste ab laborum magnam ad distinctio dolor tempore ut necessitatibus quas nobis illum nesciunt perspiciatis facere soluta cumque a animi dignissimos libero sunt voluptate ducimus! Repellendus cupiditate sed impedit perferendis fugit earum ea ad! Voluptates doloremque facilis impedit, unde ipsam dolorem placeat fuga eum, debitis nobis nisi quia maxime a corporis libero possimus aliquam error amet. Eaque laudantium est fugit odit corrupti vero reiciendis sunt tempora vitae! Nostrum, alias? Porro quia numquam vel aliquid recusandae ea sint non commodi repudiandae temporibus molestiae sunt rem iure possimus cupiditate eaque nobis voluptates, est quod animi. Facilis, perferendis nam placeat voluptate vero architecto sint sequi. Provident numquam placeat ut soluta deserunt? Est sit, eveniet, eaque, velit tempore rerum accusamus adipisci officia consectetur id aliquam corporis! Inventore odio quo, doloribus saepe consequuntur, eaque error perspiciatis facilis quam, obcaecati repudiandae blanditiis velit a iste ipsa? Veritatis reprehenderit iusto libero voluptas ut, maiores eum. Aspernatur, minima voluptas. Dignissimos reprehenderit sint veritatis eveniet. Repellat minima ullam esse voluptatem. Commodi atque reprehenderit modi, adipisci error excepturi nihil delectus aut laboriosam at tempore accusantium laudantium sapiente assumenda repellat consequuntur vel velit beatae quibusdam labore. Reiciendis possimus perferendis libero dolorum quo? Recusandae, quisquam perferendis. Dolorem dignissimos aliquid totam vitae repudiandae eligendi molestias alias ullam earum laborum aut eveniet magnam, perferendis non vero iste eum ratione optio? Fugiat nostrum, dolore molestiae nesciunt nulla voluptatibus similique molestias ut officia voluptate voluptates nam reprehenderit eos alias, rerum eum corporis, porro dolores odio blanditiis doloremque quisquam quis in. Eos blanditiis quod quos at architecto sequi, iure, minus et, voluptatem nostrum ullam quasi deleniti. Amet qui provident repudiandae quas velit iusto dolore illum mollitia voluptatibus non aliquam magni totam unde vel at, nihil voluptate vitae. Recusandae numquam rerum quam, esse nostrum exercitationem ab sunt molestias inventore? Dignissimos quod nostrum minima quibusdam fugiat quae perspiciatis alias! Totam in ex fuga earum iure maxime qui doloremque voluptate iste vitae dolores sint reiciendis ut eos, quam libero? Necessitatibus magnam eum eius excepturi dolorum id veritatis delectus quia ea! Tempora voluptate fugit ab et! Pariatur quaerat libero minima mollitia, voluptates nihil eius dolores dicta aliquid rem veritatis error, vero reiciendis quia harum reprehenderit dolorem. Eligendi a vitae optio tempore fugit eum saepe unde repellendus ipsum placeat aut dicta temporibus quia at id quo ea, assumenda odit facilis illum. Perspiciatis at officia explicabo unde voluptatibus magni, dolore ullam a laudantium, amet voluptas magnam, placeat consectetur aperiam aliquid dolorum totam ut obcaecati! Recusandae suscipit, consequuntur ab maiores ut eius impedit quaerat consectetur aspernatur aut ex dolorum ratione laudantium illum et iste ipsam aliquam deleniti ipsum! Quam soluta at earum magni repudiandae aliquam eveniet et ratione. Culpa illum iure possimus dignissimos ea ut architecto eaque ab accusantium nostrum enim velit voluptate assumenda nemo nisi, adipisci, excepturi deleniti? Magnam, assumenda! Magni enim debitis suscipit, accusantium excepturi eaque illo pariatur aliquid in laboriosam eligendi qui consequuntur rerum cum vitae ipsam voluptatem quaerat nulla. Rem, vitae ducimus. Voluptates tempore autem quaerat aspernatur veniam exercitationem fugiat rerum, labore minus pariatur nobis sequi saepe deleniti quod non velit sit sunt? Veniam laudantium deserunt quidem totam earum inventore dolore id quod vel possimus molestias dolorum, molestiae nemo laboriosam distinctio pariatur dolorem similique eum, consectetur facere voluptates dignissimos ipsam! Vero maxime incidunt accusantium accusamus corporis qui, saepe nemo sunt nesciunt fuga sit, soluta natus repudiandae quam dolore hic. Doloremque asperiores illum laboriosam facere et eius error voluptatibus molestias. Minima vitae adipisci dignissimos earum in consectetur reprehenderit optio quod totam eius numquam ut porro possimus voluptatem odit accusamus, dolorem quidem necessitatibus dolor. Praesentium nemo id et at dolor? Commodi odio ad omnis porro labore tempore accusantium dicta error, cupiditate adipisci, nulla aut! Et voluptas dignissimos quo, maxime quia odio ratione doloremque eligendi pariatur dolores similique quisquam reprehenderit error distinctio nesciunt modi enim corrupti fugiat qui exercitationem consequatur adipisci laboriosam omnis? Magni harum dicta quam asperiores quasi sed blanditiis aut ipsam quod qui ullam perspiciatis laboriosam molestias sequi non, pariatur libero maiores, quo officia repellendus rem ut voluptas? At quas id tempora distinctio, quaerat ullam expedita ad earum sit, eos aliquam iusto consequatur error dicta. Accusamus dicta quasi sunt consequatur odit sequi, nisi quod, commodi temporibus soluta veritatis amet? Explicabo praesentium illum modi necessitatibus alias error animi perspiciatis cumque excepturi deserunt accusantium veniam quod natus perferendis ratione harum saepe, vero dignissimos ullam pariatur fugiat maiores eveniet. Sit, dolore reprehenderit quis totam doloremque minus labore nobis non natus ad, esse aperiam perferendis officiis quas sunt et earum iste aspernatur veritatis. Explicabo repellat voluptatem cupiditate earum eum dignissimos obcaecati molestiae sunt perferendis. Eligendi labore quibusdam nemo quae cupiditate odit suscipit odio iste voluptatum minus! Natus nisi rem numquam consequuntur voluptatem dolorum quidem delectus recusandae. Eveniet tempora possimus optio error reiciendis doloremque alias, unde aperiam, iste, dolore accusantium nulla corporis commodi? Alias, iure non. Ipsum sequi quas doloribus quam magnam ratione architecto laborum voluptates et, optio, blanditiis dignissimos libero quia eveniet ipsa mollitia unde. Libero ratione fugiat nesciunt rem cum numquam exercitationem minima minus. Molestiae saepe voluptas, quos ipsum porro accusamus aspernatur magni deserunt, harum atque excepturi. Explicabo, fuga nostrum quibusdam expedita eaque quis non earum quasi nisi? Nisi cupiditate voluptate fugiat repudiandae recusandae laborum quam voluptatem odio incidunt molestias natus esse quos ratione libero accusamus modi voluptas id tempore, iste quaerat itaque amet nobis? Maxime nulla in labore amet exercitationem eius harum sit iste accusamus laudantium dolores molestias, assumenda quidem maiores saepe dolor omnis doloribus quae laborum earum perspiciatis ipsa commodi aut! Labore ipsam adipisci minima itaque libero odio quam, iste nam possimus ab porro tempore magni sapiente dicta molestiae? Asperiores, blanditiis expedita? Sapiente expedita laudantium repellendus sed ab voluptate tenetur corrupti, quod ratione error temporibus reiciendis consectetur delectus ducimus obcaecati sint ipsa enim voluptas iste aut, eligendi voluptatem saepe! Recusandae dolorum natus non, repellat laboriosam modi, officiis illum culpa quidem voluptates odit, fuga iste corrupti quibusdam atque voluptatibus dicta consectetur quam ipsam alias. Accusamus neque ratione ducimus, repellat modi qui adipisci amet dolores, corporis, id vel veniam consectetur dolorum! Minima quos, facilis sequi fugiat repellat quo quaerat inventore saepe tempora ut error. Sapiente ut ipsum blanditiis, nostrum et tempora, consequatur incidunt laudantium quaerat optio at totam ipsa deleniti cum dolorum cumque harum voluptas! Nisi ut, delectus officia sapiente ab beatae eveniet quae molestiae exercitationem vitae dolorem. Consectetur temporibus a mollitia cumque. Expedita repellat autem sint omnis architecto.</p>
+    </div>
+
+
+    <div id="m3">
+        <h4>On this page</h4>
+        <hr>
+        <p>Quick start</p>
+        <p>CND links</p>
+        <p>Next steps</p>
+        <p>JS components</p>
+        <P>Important globals</P>
+        <ul>
+            <li>Html5 doctype</li>
+            <li>Viewport meta</li>
+            <li>Box-sizing</li>
+            <li>Reboot</li>
+        </ul>
+        <p>Community</p>
+    </div>
+    </div>
+
+
+    <div id="d3">
+        <div>
+        <h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+</svg> Bootstrap</h4>
+<p>Designed and built with all the love in the world<br> by the Bootstrap team with the help of our<br> contributors.</p><br>
+ <p>Code licensed MIT, docs CC BY 3.0.</p><br>
+ <p>Currently v5.3.8.</p>
+ </div>
+
+ <div id="sp">
+    <h4>links</h4>
+    <p>Home</p>
+    <p>Docs</p>
+    <p>Examples</p>
+    <p>Icons</p>
+    <p>Blog</p>
+    <p>Swag store</p>
+ </div>
+
+ <div id="sp1">
+    <h4>Guides</h4>
+    <p>Getting started</p>
+    <p>Starter template</p>
+    <p>Webpack</p>
+    <p>Parcel</p>
+    <p>Vite</p>
+ </div>
+
+ <div id="sp2">
+    <h4>Projects</h4>
+    <p>Bootstrap 5</p>
+    <p>Bootstrap 4</p>
+    <p>Icons</p>
+    <p>RFS</p>
+    <p>Example repo</p>
+ </div>
+
+ <div id="sp3">
+    <h4>Community</h4>
+    <p>Issues</p>
+    <p>Discussions</p>
+    <p>Corporate sponsors</p>
+    <p>Open Collective</p>
+    <p>Stack Overflow</p>
+ </div>      
+</div>
+</body>
+</html>
